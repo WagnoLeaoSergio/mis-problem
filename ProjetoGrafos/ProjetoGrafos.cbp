@@ -32,6 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="ListaGrafos.cpp" />
+		<Unit filename="ListaGrafos.h" />
+		<Unit filename="ListaGrafosVizinho.h" />
+		<Unit filename="Vertice.cpp" />
+		<Unit filename="Vertice.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

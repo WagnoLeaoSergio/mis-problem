@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1553647316 source:/home/wagno/Documents/TrabalhoGrafos/ProjetoGrafos/ListaGrafos.cpp
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"ListaGrafos.h"
+
+1553647897 /home/wagno/Documents/TrabalhoGrafos/ProjetoGrafos/ListaGrafos.h
+	"ListaGrafosVizinho.h"
+
+1553649402 /home/wagno/Documents/TrabalhoGrafos/ProjetoGrafos/ListaGrafosVizinho.h
+	"Vertice.h"
+
+1553649417 /home/wagno/Documents/TrabalhoGrafos/ProjetoGrafos/Vertice.h
+
+1553251947 source:/home/wagno/Documents/TrabalhoGrafos/ProjetoGrafos/main.cpp
+	<iostream>
+

@@ -14,4 +14,5 @@ class Grafo
      Grafo(bool dir);
      ~Grafo();
      void conectar(int id1, int id2, char** argv);
+     void teste();
 };

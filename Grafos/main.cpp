@@ -1,9 +1,11 @@
 #include <iostream>
+#include "Grafo.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Grafo t;
+    t.teste();
     return 0;
 }

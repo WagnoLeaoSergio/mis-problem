@@ -1,4 +1,5 @@
 #include "Aresta.h"
+#include <cstddef>
 class No
 {
 

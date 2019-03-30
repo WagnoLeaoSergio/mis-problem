@@ -1,4 +1,19 @@
 # depslib dependency file v1.0
-1553955655 source:/home/wagno/Documents/TrabalhoGrafos/Grafos/main.cpp
+1553965743 source:/home/wagno/Documents/TrabalhoGrafos/Grafos/main.cpp
 	<iostream>
+	"Grafo.h"
+
+1553965894 source:/home/wagno/Documents/TrabalhoGrafos/Grafos/Grafo.cpp
+	"Grafo.h"
+	<stdio.h>
+	<iostream>
+
+1553965835 /home/wagno/Documents/TrabalhoGrafos/Grafos/Grafo.h
+	"No.h"
+
+1553965621 /home/wagno/Documents/TrabalhoGrafos/Grafos/No.h
+	"Aresta.h"
+	<cstddef>
+
+1553965621 /home/wagno/Documents/TrabalhoGrafos/Grafos/Aresta.h
 

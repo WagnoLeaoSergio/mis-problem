@@ -8,21 +8,18 @@ Grafo::Grafo()
 {
     cout << "\nA graph has been created\n";
 
-    ListaNo = new No;
+    ListaNo = NULL;
     nAresta = 0;
     grau = 0;
     direcionado = false;
     pondNo = false;
     pondAresta = false;
 
-    ListaNo->setProx(NULL);
-    ListaNo->setAnt(NULL);
-
 }
 
 Grafo::Grafo(bool dir)
 {
-    ListaNo = new No;
+    ListaNo = NULL;
     nAresta = 0;
     grau = 0;
     direcionado = dir;

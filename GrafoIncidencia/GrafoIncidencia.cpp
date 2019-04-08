@@ -28,6 +28,12 @@ void GrafoIncidencia::conectar(int n1, int n2)
             cout << "\nERRO! VERTICES NAO EXISTEM NO GRAFO\n";
             return;
         }
+    if(n1 == n2)
+    {
+        cout << "\nERRO! SELF LOOP PROIBIDO!;
+        return;
+    }
+    
     int indice = (n1-1)*nNos + (n2-1);
 
     mat[indice] = 1;
@@ -40,7 +46,7 @@ void GrafoIncidencia::plotar()
     {
         for(int j = 0; j < nNos; j++)
         {
-            cout << mat[( i*3 + j)] << ' ';
+            cout << mat[( i*nNos + j)] << ' ';
         }
         cout << "\n";
     }

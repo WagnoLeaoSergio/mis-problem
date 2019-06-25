@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1560794783 source:c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\grafo.cpp
+	"Grafo.h"
+	<stdio.h>
+	<iostream>
+	<queue>
+	<set>
+	<stack>
+	<stdlib.h>
+	<list>
+	<stdlib.h>
+	<algorithm>
+	<time.h>
+	<chrono>
+	<random>
+	<windows.h>
+
+1561387176 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\grafo.h
+	"No.h"
+	<set>
+	<vector>
+
+1557066527 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\no.h
+	"Aresta.h"
+	<cstddef>
+
+1557002515 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\aresta.h
+	<cstddef>
+
+1561383986 source:c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\main.cpp
+	<iostream>
+	"Grafo.h"
+	<iostream>
+	"Grafo.h"
+	<fstream>
+	<sstream>
+

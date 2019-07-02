@@ -7,50 +7,66 @@ using namespace std;
 class Grafo
 {
     private:
-     int n;
-     int e;
-     No* ListaNo;
-     int nAresta;
-     int grau;
-     bool direcionado;
-     bool pondNo;
-     bool pondAresta;
-     vector <int> auxCaminhamentoLargura(No* p, set <int> &visitados);
-     void auxCaminhamentoProf(No* p, set <int> &visitados);
-     bool ehConexo(set <int> visitados);
-     int ehFortementeConexo(No* p, set <int> &ida);
-     void auxOT(No* primeiro, std::vector <int> &vect, No** visitados, int n);
-     No* buscaNo(int id);
-     vector <int> ordenaGrau();
-     int auxOrdenaGrau(set < int > &visitados);
-     vector <int> gulosoIndependente();
-     vector <int> gulosoIndependenteRandomizado(float alfa, int itera);
-     void auxGuloso_atualizaCandidatos(vector <int> &candidatos, int remocao);
-     bool temAresta(int id1, int id2);
-     int getRandomIntNumber(int nMin, int nMax);
-     float getRandomFloatNumber(float nMin, float nMax);
-     vector <int> gulosoIndependenteReativo(int maxItera, int bloco);
-     void atualizaProb(vector <float> &alfas, vector <int> &cont, vector <int> &numNosSol, vector <int> &sol, vector <float> &p, int delta);
-     int selecionaAlfa(vector <float> p);
-     void atualizaDados(vector <int> &sol, int indexAlfa, vector <int> &cont, vector <int> &numNosSol);
-     int auxCFC(No* p, No* t, Aresta* a, vector < vector <int> > &comp, int i);
+        int numNos;
+        int numArestas;
+        No* primeiro;
+        int grau;
+        bool direcionado;
+        bool pondNo;
+        bool pondAresta;
+
+        int contaNos();
+        No* buscaNo(int id);
+        bool temAresta(int id1, int id2);
+        int getRandomIntNumber(int nMin, int nMax);
+        double getRandomFloatNumber(double nMin, double nMax);
+        int auxOrdenaMenorGrau(set < int > &visitados);
+        vector <int> ordenaGrau();
+
+        vector <int> auxCaminhamentoLargura(No* p, set <int> &visitados);
+        vector <int> auxCaminhamentoProf(No* p, set <int> &visitados);
+
+        bool ehConexo(set <int> visitados);
+        int ehFortementeConexo(No* p, set <int> &ida);
+        int auxCFC(No* p, No* t, Aresta* a, vector < vector <int> > &comp, int i);
+        void auxOT(No* primeiro, std::vector <int> &vect, No** visitados, int n);
+
+        void auxGuloso_atualizaCandidatos(vector <int> &candidatos, int remocao);
+        vector <int> guloso();
+        vector <int> gulosoRandomizado(float alfa, int itera);
+
+        int selecionaAlfa(vector <double> p);
+        void atualizaProb(vector <float> &alfas, vector <int> &cont, vector <int> &numNosSol, vector <int> &sol, vector <double> &p, int delta);
+        void atualizaDados(vector <int> &sol, int indexAlfa, vector <int> &cont, vector <int> &numNosSol);
+        vector <int> gulosoRandomizadoReativo(int maxItera, int bloco);
 
     public:
-     //Grafo();
-     Grafo(bool dir);
-     ~Grafo();
-     bool busca(int id);
-     //Apenas declaracao do metodo
-     void conectar(int id1, int id2);
-     void desconectar(int id1, int id2);
-     void caminhamentoLargura();
-     void printGrafo();
-     void caminhamentoProf();
-     void excluirNo(int id); ///EM ANDAMENTO
-     int contaNos();
-     int componentesConexas();
-     void inserir(int id1);
-     void componentesFortementeConexas();
-     void ordenacoesTopologicas();
-     vector <int> subconjuntoIndependenteMax();
+        //Grafo();
+        Grafo(bool ponderado, bool dir);
+        ~Grafo();
+        bool busca(int id);
+        //Apenas declaracao do metodo
+        void inserir(int id1);
+        void conectar(int id1, int id2, float peso);
+        void desconectar(int id1, int id2);
+        void excluirNo(int id); ///EM ANDAMENTO
+        int getNumArestas();
+        int getNumNos();
+        void printGrafo();
+
+        vector <int> caminhamentoLargura();
+        vector <int> caminhamentoProf();
+
+        vector < vector <int> > componentesConexas();
+        void componentesFortementeConexas();
+        void ordenacoesTopologicas();
+
+        int* dijkstra(int id);
+        void floyd();
+        int prim();
+        Grafo* kruskal();
+
+        vector <int> subconjuntoIndependenteMaxG();
+        vector <int> subconjuntoIndependenteMaxGR();
+        vector <int> subconjuntoIndependenteMaxGRR();
 };

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1560794783 source:c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\grafo.cpp
+1561999088 source:c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\grafo.cpp
 	"Grafo.h"
 	<stdio.h>
 	<iostream>
@@ -15,23 +15,59 @@
 	<random>
 	<windows.h>
 
-1561387176 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\grafo.h
+1561997203 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\grafo.h
 	"No.h"
 	<set>
 	<vector>
 
-1557066527 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\no.h
+1561914778 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\no.h
 	"Aresta.h"
 	<cstddef>
 
-1557002515 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\aresta.h
+1561914543 c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\aresta.h
 	<cstddef>
 
-1561383986 source:c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\main.cpp
+1561999299 source:c:\users\davim\onedrive\documentos\projetos\grafos\trabgrafos\main.cpp
 	<iostream>
 	"Grafo.h"
 	<iostream>
 	"Grafo.h"
 	<fstream>
 	<sstream>
+
+1561999299 source:c:\users\getcomp\downloads\trabgrafos\main.cpp
+	<iostream>
+	"Grafo.h"
+	<iostream>
+	"Grafo.h"
+	<fstream>
+	<sstream>
+
+1561997203 c:\users\getcomp\downloads\trabgrafos\grafo.h
+	"No.h"
+	<set>
+	<vector>
+
+1561914778 c:\users\getcomp\downloads\trabgrafos\no.h
+	"Aresta.h"
+	<cstddef>
+
+1561914543 c:\users\getcomp\downloads\trabgrafos\aresta.h
+	<cstddef>
+
+1562026750 source:c:\users\getcomp\downloads\trabgrafos\grafo.cpp
+	"Grafo.h"
+	<stdio.h>
+	<iostream>
+	<queue>
+	<set>
+	<stack>
+	<stdlib.h>
+	<list>
+	<stdlib.h>
+	<algorithm>
+	<time.h>
+	<chrono>
+	<random>
+	<windows.h>
 

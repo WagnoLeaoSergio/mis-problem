@@ -26,6 +26,6 @@ Implemented algorithms:
 To run the code, simply run:
 
 ```
-g++ *.cpp -o main [INPUT PATH] [OUTPUT PATH] [BOOL FOR GRAPH WEIGHTS] [BOOL FOR DIRECTED GRAPH].
-main
+g++ *.cpp -o main
+main [INPUT PATH] [OUTPUT PATH] [BOOL FOR GRAPH WEIGHTS] [BOOL FOR DIRECTED GRAPH]
 ```

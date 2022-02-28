@@ -328,25 +328,10 @@ vector < vector <int> > Grafo::componentesConexas()
             }
         }
         cout << "deadjdleahdlakda " << componentes[0][0];
-        /* HOW TO USE ITERATOR
-        set < No* > componente;
-        componente.insert(primeiro);
-        set < No* > ::iterator it;
-        it = componente.begin();
-        cout << "teste iterator de p, id: " << (*it)->getId();
-        */
     }
     return componentes;
 }
-/*
-int Grafo::ehFortementeConexo(No* p, set < int > &visitados)
-{
-}
 
-int Grafo::componentesFortementeConexas()
-{
-}
-*/
 void Grafo::componentesFortementeConexas()
 {
     No* p = primeiro;
@@ -719,11 +704,6 @@ int Grafo::prim()
         custoFinal = custoFinal + eMP->getPeso();
     }
 
-    /*cout << endl << "Custo minimo final: " << custoFinal << endl;
-    for(int i = 0; i < (int)arestas.size(); i++){
-        cout << arestas[i]->getPeso() << ", ";
-    }*/
-
     return custoFinal;
 }
 
@@ -1007,8 +987,6 @@ vector <int> Grafo::gulosoRandomizadoReativo(int maxItera, int bloco)
             solucaoFinal = solucaoAtual;
         atualizaDados(solucaoAtual, i, cont, numNosSol);
     }
-    //if(i % bloco == 0)
-    //  atualizaProb(alfas, cont, numNosSol, solucaoAtual, p, 100);
 
     for(int i = 0; i < maxItera; i++)
     {
@@ -1078,4 +1056,3 @@ vector <int> Grafo::subconjuntoIndependenteMaxGRR()
     cout << "Tempo gasto: " << funcTime << " s." << endl;
     return solucao;
 }
-

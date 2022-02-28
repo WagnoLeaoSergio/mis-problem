@@ -99,43 +99,7 @@ class No
                 }
             }
         }
-        ///EM ANDAMENTO --------------------------------------------------
-        /*
-        void desalocarAdj(int id)
-        {
-            if(primeiroAdj != NULL)
-            {
-                if(primeiroAdj->getNoadj() == id)
-                {
-                    Aresta *a = primeiroAdj;
-                    primeiroAdj = primeiroAdj->getProx();
-                    primeiroAdj->setAnt(NULL);
-                    delete a;
-                }
-                else
-                {
-                    for(Aresta *a = primeiroAdj; a != NULL; a = a->getProx())
-                        if(a->getNoadj() == id)
-                        {
-                            if(a->getProx() == NULL)
-                            {
-                                a->getAnt()->setProx(NULL);
-                                delete a;
-                                break;
-                            }
-                            else
-                            {
-                                a->getAnt()->setProx(a->getProx());
-                                a->getProx()->setAnt(a->getAnt());
-                                delete a;
-                                break;
-                            }
-                        }
-                }
-            }
-        }
-        */
-        ///-----------------------------------------------------------------
+        
         //Funcao para retornar a aresta do no
         Aresta* getAdj()
         {

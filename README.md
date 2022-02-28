@@ -1,11 +1,11 @@
-# TrabalhoGrafos
+# Maximum Independent Set Graph Problem
 
-Vamo usar o README como um arquivo de .log tipo assim:
+## Description
 
--------------- 22/03------------------
+This project aims to develop the main components and functions needed to implements an heuristic algorithm to solve the maximum independent problem (MIS) proposed in the area of Graph Theory.
 
-Criei o a pasta ProjetoGrafos no Code::Blocks
+## The MIS Problem
 
---------------30/03 --------------------
+## Classes and Functions Implemented
 
-Criei a pasta Grafos do jeito que o Stenio fez na aula
+## How to Run

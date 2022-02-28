@@ -1,11 +1,31 @@
-# Maximum Independent Set Graph Problem
+# Maximum Independent Set problem
 
 ## Description
 
-This project aims to develop the main components and functions needed to implements an heuristic algorithm to solve the maximum independent problem (MIS) proposed in the area of Graph Theory.
+In this proje we developed the main components and functions needed to implement heuristic algorithms to solve the maximum independent problem (MIS) and graph theory algorithms.
 
-## The MIS Problem
+## MIS Problem
 
-## Classes and Functions Implemented
+The Maximum Independent Set (MIS) problem in graph theory is the task of finding the largest independent set in a graph, where an independent set is a set of vertices such that no two vertices are adjacent. There is currently no known efficient algorithm to find maximum independent sets.
 
-## How to Run
+## Algorithms
+
+Implemented algorithms:
+
+- Dijkstra's algorithm;
+- Floyd algorithm;
+- Prim's algorithm;
+- Kruskal's algorithm;
+- Greedy;
+- Greedy Randomized;
+- Greedy Randomized Adaptive.
+- Other graph theory functions.
+
+## How to run
+
+To run the code, simply run:
+
+```
+g++ *.cpp -o main [INPUT PATH] [OUTPUT PATH] [BOOL FOR GRAPH WEIGHTS] [BOOL FOR DIRECTED GRAPH].
+main
+```
